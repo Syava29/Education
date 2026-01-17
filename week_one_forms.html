@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">    
+    <title>Регистрация пользователя</title>
+</head>
+<body>
+    <form>        
+        <h2>Регистрация</h2>
+
+        <label for="name">Имя</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Введите Email" required>
+
+        <label for="password">Пароль</label>
+        <input id="password" name="password" type="password" placeholder="Введите пароль" required>
+                
+        <input id="gender_m" name="gender" value="m" type="radio">
+        <label for="gender_m">Мужчина</label>
+
+        <input id="gender_f" name="gender" value="f" type="radio">
+        <label for="gender_f">Женщина</label>
+
+        <label for="city">Город</label>
+        <select name="city" id="city">
+            <option value="orl">Орёл</option>
+            <option value="msk">Москва</option>
+            <option value="tul">Тула</option>
+        </select>
+
+        <input id="confirm_condition" name="confirm_condition" type="checkbox">
+        <label for="confirm_condition">"Я согласен с условиями"</label>        
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
