@@ -1,0 +1,21 @@
+h1 {
+    color: red;
+    font-size: 24px;
+    font-family: monospace;       
+}
+
+#main_content {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;   
+    box-sizing: border-box; 
+    margin: auto;
+}
+
+.container_menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex: 2;
+}
