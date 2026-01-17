@@ -1,25 +1,23 @@
 .container {
     display: flex;
     justify-content: center;    
-    flex-direction: row;
-    gap: 150px;
+    gap: 30px;
 }
 
 .card {
     width: 250px;
-    height: 200px;
-    box-sizing: border-box;
-    padding: 20px;
-    border-radius: 15%;
-    background: beige; 
+    height: 200px;        
+    background: beige;     
+    border-radius: 12px;                
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
 }
 
 .card:hover {
-    width: 255px;
-    height: 205px;
-    box-sizing: border-box;
+    transform: scale(1.05);    
 }
 
-button {
-    margin-top: 30px;    
+.card button {
+    margin-top: auto;
 }
