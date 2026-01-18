@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">        
     <title>Профиль разработчика</title>
+    <link rel="stylesheet" href="style_profile_dev.css">
 </head>
 <body>
     <header>
         <h1>Андрей</h1>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">О себе</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
     </header>
-
+    <hr>
     <main>
-        <section>
+        <section id="about-section">
             <h2>О себе</h2>
-            <img src="cat.jpg" alt="кот в очках">
-            <p>Начинающий веб-разработчик</p>            
+            <article id="about">
+                <img src="cat.jpg" alt="кот в очках" id="profile_img">
+                <p>Начинающий веб-разработчик</p>            
+            </article>            
         </section>
         <section>
             <h2>Навыки</h2>
@@ -33,35 +36,41 @@
         </section>
         <section>
             <h2>Проекты</h2>
-            <article class="project-card">
-                <h3>Страничка о себе</h3>
-                <p>Веб страничка с общей информацией о себе</p>
-            </article>
-            <article class="project-card">
-                <h3>Новостная лента</h3>
-                <p>Страничка с главными новостями в стране и мире</p>
-            </article>
-            <article class="project-card">
-                <h3>Прогноз погоды</h3>
-                <p>Страничка с прогнозом погоды на ближайшую неделю</p>
-            </article>
+            <div id="list-projects">
+                <article class="project-card">
+                    <h3>Страничка о себе</h3>
+                    <p>Веб страничка с общей информацией о себе</p>
+                </article>
+                <article class="project-card">
+                    <h3>Новостная лента</h3>
+                    <p>Страничка с главными новостями в стране и мире</p>
+                </article>
+                <article class="project-card">
+                    <h3>Прогноз погоды</h3>
+                    <p>Страничка с прогнозом погоды на ближайшую неделю</p>
+                </article>
+            </div>            
         </section>
         <section>
-            <form>
-                <fieldset>  
+            <form id="contact-form">
+                <fieldset id="contact-fieldset">  
                     <legend>Контакты</legend>
-                    <label for="email_input">Введите Email</label>
-                    <input type="email" id="email_input" name="email" placeholder="Введите Email" required>
-                    
-                    <label for="phone_input">Введите телефон</label>
-                    <input type="tel" id="phone_input" name="phone" placeholder="+7-(___)-___-__-__" required>
 
-                    <button type="submit">Отправить</button>
+                    <div id="contact">
+                        <label for="email_input">Введите Email</label>
+                        <input type="email" id="email_input" name="email" placeholder="Введите Email" required>
+                        
+                        <label for="phone_input">Введите телефон</label>
+                        <input type="tel" id="phone_input" name="phone" placeholder="+7-(___)-___-__-__" required>
+
+                        <button type="submit">Отправить</button>
+                    </div>
+                    
                 </fieldset>                
             </form>            
         </section>
     </main>
-
+    <hr>
     <footer>
         <p>Севостьянов Андрей © 2026</p>
     </footer>
