@@ -13,12 +13,6 @@ header {
     background: rgb(80, 211, 251);
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 #menu {
     display: flex;
     flex-direction: row;
@@ -44,16 +38,14 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     gap: 30px;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 200px;
+    padding: 15px;
     background: burlywood;
     border-radius: 12px;
     transition: transform 0.3s;
@@ -70,7 +62,7 @@ section {
 
 #contact-fieldset {
     height: 200px;
-    width: 100px;
+    width: 300px;
 }
 
 #contact {    
@@ -81,5 +73,5 @@ section {
 
 footer {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
