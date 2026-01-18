@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">        
+    <title>Профиль разработчика</title>
+</head>
+<body>
+    <header>
+        <h1>Андрей</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О себе</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>О себе</h2>
+            <img src="cat.jpg" alt="кот в очках">
+            <p>Начинающий веб-разработчик</p>            
+        </section>
+        <section>
+            <h2>Навыки</h2>
+            <ul>
+                <li>Базовые знания HTML</li>
+                <li>Базовые знания CSS</li>
+                <li>Базовые знания GIT</li>
+                <li>Умение работать в команде</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Проекты</h2>
+            <article class="project-card">
+                <h3>Страничка о себе</h3>
+                <p>Веб страничка с общей информацией о себе</p>
+            </article>
+            <article class="project-card">
+                <h3>Новостная лента</h3>
+                <p>Страничка с главными новостями в стране и мире</p>
+            </article>
+            <article class="project-card">
+                <h3>Прогноз погоды</h3>
+                <p>Страничка с прогнозом погоды на ближайшую неделю</p>
+            </article>
+        </section>
+        <section>
+            <form>
+                <fieldset>  
+                    <legend>Контакты</legend>
+                    <label for="email_input">Введите Email</label>
+                    <input type="email" id="email_input" name="email" placeholder="Введите Email" required>
+                    
+                    <label for="phone_input">Введите телефон</label>
+                    <input type="tel" id="phone_input" name="phone" placeholder="+7-(___)-___-__-__" required>
+
+                    <button type="submit">Отправить</button>
+                </fieldset>                
+            </form>            
+        </section>
+    </main>
+
+    <footer>
+        <p>Севостьянов Андрей © 2026</p>
+    </footer>
+</body>
+</html>
