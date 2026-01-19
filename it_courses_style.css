@@ -1,4 +1,105 @@
-img {
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#code-logo {
+    height: 50px;
+    width: 50px;
+}
+
+section {
+    margin: 20px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#about-course {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#logo-course {
     height: 100px;
     width: 100px;
+}
+
+#cards-with-advantages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; 
+}
+
+.card-with-advantages {
+    display: flex;
+    flex-direction: column;
+    background: bisque;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.card-with-advantages:hover {
+    transform: scale(1.05);
+}
+
+#cards-with-tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.card-with-tarif {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(192, 247, 97);
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.card-with-tarif:hover {
+    transform: scale(1.05);
+}
+
+#contact-fieldset {
+    width: 200px;
+    height: 250px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
 }

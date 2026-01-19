@@ -7,17 +7,18 @@
 </head>
 <body>
     <header>
-        <img src="code_logo.jpg" alt="лого страницы">
+        <img src="code_logo.jpg" alt="лого страницы" id="code-logo">
         <nav>
-            <ul>
+            <ul id="menu-nav">
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Список курсов</a></li>
                 <li><a href="#">Дополнительная информация</a></li>
             </ul>
         </nav>
     </header>
+    <hr>
     <main>
-        <section>
+        <section id="hero">
             <h1>Курс Frontend-разработчик с нуля</h1>
             <p>Вы с нуля научитесь создавать веб-страницы</p>
             <button type="submit">Записаться</button>
@@ -25,29 +26,31 @@
         <section>
             <h2>О курсе</h2>
             <p><b>Курс состоит из трёх секций:</b></p>
-            <ul>
-                <li>Изучение HTML</li>
-                <li>Изучение CSS</li>
-                <li>Изучение JS</li>
-            </ul>                             
-            <img src="logo_course.webp" alt="лого курса">
+            <div id="about-course">                
+                <ul>
+                    <li>Изучение HTML</li>
+                    <li>Изучение CSS</li>
+                    <li>Изучение JS</li>
+                </ul>                             
+                <img src="logo_course.webp" alt="лого курса" id="logo-course">
+            </div>            
         </section>
         <section>
             <h2>Преимущества</h2>
             <div id="cards-with-advantages">
-                <article>
+                <article class="card-with-advantages">
                     <h3>Простота</h3>
                     <p>Всё описано доступным языком, только нужная информация</p>
                 </article>
-                <article>
+                <article class="card-with-advantages">
                     <h3>Возможность заниматься в своём ритме</h3>
                     <p>Вы можете подстроить расписание обучения под себя</p>
                 </article>
-                <article>
+                <article class="card-with-advantages">
                     <h3>Проекты</h3>
                     <p>После теории сразу несколько учебных проектов, которые помогу закрепить навыки</p>
                 </article>
-                <article>
+                <article class="card-with-advantages">
                     <h3>Помощь с трудоустройством</h3>
                     <p>Гарантия трудоустройства 100%</p>
                 </article>
@@ -55,37 +58,39 @@
         </section>
         <section>
             <h2>Тарифы</h2>
-            <div id="card-with-tarif">
-                <article>
+            <div id="cards-with-tarif">
+                <article class="card-with-tarif">
                     <h3>Теория</h3>
                     <p>Цена: Беспалтно</p>
                 </article>
-                <article>
+                <article class="card-with-tarif">
                     <h3>Теория + практика</h3>
                     <p>Цена: 1500р</p>
                 </article>
-                <article>
+                <article class="card-with-tarif">
                     <h3>Курс + трудоустройство</h3>
                     <p>Цена: 15000р</p>
                 </article>
             </div>
         </section>
         <section>
-            <form>
-                <fieldset>
+            <form id="contact">
+                <fieldset id="contact-fieldset">
                     <legend>Записаться на курс</legend>
+                    <div class="contact-form">
+                        <label for="name_user">Имя</label>
+                        <input type="text" id="name-user" required>
 
-                    <label for="name_user">Имя</label>
-                    <input type="text" id="name-user">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="example@mail.ru" required>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="example@mail.ru">
-
-                    <button type="submit">Отправить</button>
+                        <button type="submit">Отправить</button>
+                    </div>                    
                 </fieldset>
             </form>
         </section>
     </main>
+    <hr>
     <footer>
         <p>Курс web-разработки © 2026</p>
     </footer>
