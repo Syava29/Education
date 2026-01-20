@@ -1,21 +1,51 @@
-h1 {
-    color: red;
-    font-size: 24px;
-    font-family: monospace;       
-}
+/* 
+display / position
+flex / grid
+size
+box-model
+visual
+text
+animation
+*/
 
-#main_content {
-    width: 200px;
-    padding: 20px;
-    border: 2px solid black;   
-    box-sizing: border-box; 
-    margin: auto;
-}
-
-.container_menu {
+.best_practice {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column;
+
+    width: 200px;
+    padding: 16px;
+
+    border-radius: 12px;
+    background: white;
+
+    text-align: center;
+
+    transition: transform 0.3s;
+}
+
+.product-cards {
+    display: flex;
     justify-content: center;
-    flex: 2;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;   
+    
+    width: 200px;
+    padding: 16px;
+
+    border-radius: 12px;
+    background: rgb(206, 243, 153);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-card button {
+    margin-top: auto;
 }
