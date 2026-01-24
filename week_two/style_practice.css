@@ -1,6 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;    
+    border: 5px solid;
+}
+
 .main-heading {
     color: blue;    
-    font-size: 5rem;
+    font-size: 2rem;
     padding: 10px 0;
     margin: 15px;
 }
@@ -17,5 +28,5 @@
     font-size: 0.875rem;
     padding: 10px 16px;
     margin: 10px;
-    background-color: chartreuse;
+    background-color: rgb(106, 214, 247);
 }
