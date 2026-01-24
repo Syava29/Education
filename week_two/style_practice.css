@@ -1,0 +1,21 @@
+.main-heading {
+    color: blue;    
+    font-size: 5rem;
+    padding: 10px 0;
+    margin: 15px;
+}
+
+.main-info {
+    color: darkgray;
+    font-size: 1rem;
+    padding: 10px 0;
+    margin: 15px;
+}
+
+.sign-up-btn {    
+    color: red;
+    font-size: 0.875rem;
+    padding: 10px 16px;
+    margin: 10px;
+    background-color: chartreuse;
+}
