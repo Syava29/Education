@@ -13,13 +13,21 @@ body {
 }
 
 h1, p {    
-    text-align: center;
+    text-align: center;    
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-style: dashed;    
     margin: 3px;
     background-color: rgb(74, 74, 206);
     color: azure;
     border: 3px double red;
     border-radius: 15px;
     font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .main-container {
