@@ -12,11 +12,12 @@ body {
     background: fixed url("background.jpg");
 }
 
-h1, p {    
+h1 {    
     text-align: center;    
     text-decoration: line-through;
     text-decoration-color: red;
-    text-decoration-style: dashed;    
+    text-decoration-style: dashed;  
+    text-shadow: 2px 2px  5px red;  
     margin: 3px;
     background-color: rgb(74, 74, 206);
     color: azure;
@@ -39,4 +40,24 @@ a {
     border: 2px solid yellow;
     outline: 3px dashed red;
     outline-offset: 3px;
+    border-radius: 20px;
+}
+
+.main-card-p {
+    /* text-indent: 50px; */
+    font-size: 1.25em;
+    letter-spacing: 5px;
+    line-height: 1;
+    text-shadow: 1px 1px 5px red;
+}
+
+.main-card-p-2 {
+    line-height: 1.8;
+    word-spacing: 20px;
+    /* white-space: nowrap; */
+}
+
+button {
+    border-radius: 12px;
+    background: powderblue;
 }
