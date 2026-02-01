@@ -24,6 +24,8 @@ header {
 }
 
 .nav-ul {
+    /* list-style-type: none; */
+    list-style: none;
     margin-right: 20px;
     display: flex;
     flex-direction: row;
@@ -31,7 +33,7 @@ header {
 }
 
 #nav1:hover {
-    color: brown;
+    color: brown;    
 }
 
 #nav2:hover {
@@ -81,6 +83,11 @@ a {
     outline: 3px dashed red;
     outline-offset: 3px;
     border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.main-container:hover {
+    transform: scale(1.05);
 }
 
 .main-card-p {
