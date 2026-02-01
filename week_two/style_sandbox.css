@@ -1,34 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
 /* body {
     background-color: beige;
     background-image: url("background.jpg");
     background-attachment: fixed;
 } */
-/* сокращённый вариант фона */
-* {
-    box-sizing: border-box;
-}
 
+
+
+/* сокращённый вариант фона */
 body {
     background: fixed url("background.jpg");
+    
 }
 
-h1 {    
+header {
+    background: lavender;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-ul {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    /* font-size: 10vw; */
+}
+
+h2 {    
     text-align: center;    
     text-decoration: line-through;
     text-decoration-color: red;
     text-decoration-style: dashed;  
-    text-shadow: 2px 2px  5px red;  
+    text-shadow: 2px 2px  5px red;     
     margin: 3px;
     background-color: rgb(74, 74, 206);
     color: azure;
     border: 3px double red;
     border-radius: 15px;
     font-family: monospace;
+    font-size: 1.875em;
 }
 
 a {
     text-decoration: none;
     text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .main-container {
@@ -46,7 +72,8 @@ a {
 .main-card-p {
     /* text-indent: 50px; */
     font-size: 1.25em;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1;
     text-shadow: 1px 1px 5px red;
 }
@@ -54,10 +81,11 @@ a {
 .main-card-p-2 {
     line-height: 1.8;
     word-spacing: 20px;
+    font-weight: bold;
     /* white-space: nowrap; */
 }
 
 button {
-    border-radius: 12px;
+    border-radius: 10px;
     background: powderblue;
 }
