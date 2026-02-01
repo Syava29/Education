@@ -13,7 +13,7 @@
 /* сокращённый вариант фона */
 body {
     background: fixed url("background.jpg");
-    
+    margin: 0;
 }
 
 header {
