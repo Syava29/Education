@@ -82,3 +82,28 @@ function multiplyNumeric(obj) {
 }
 
 multiplyNumeric(menu);
+
+// клонирование объектов
+let infoUsers = {
+    name: "Jonh",
+    age: 32,
+    city: "Moscow"
+};
+
+let cloneInfoUsers = {};
+
+for (let key in infoUsers) {
+    cloneInfoUsers[key] = infoUsers[key];
+}
+
+console.log(infoUsers);
+console.log(cloneInfoUsers);
+
+let infoAdmin = {
+    id: 123
+};
+
+// с помощью метода Object.assign
+Object.assign(infoAdmin, infoUsers);
+
+console.log(infoAdmin);
