@@ -153,6 +153,27 @@ article p {
     color: #FFFFFF;;
 }
 
+.reviews h2 {    
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 1);
+}
+
+.reviews p {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.reviews article p {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 1);
+}
+
 /* .header { ... }
 .container { ... }
 .section { ... } */
@@ -215,6 +236,12 @@ header {
     margin: 0;
     font-family: sans-serif; 
     color: #000000B2;    
+}
+
+.reviews section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 /* .btn { ... }
@@ -346,6 +373,14 @@ nav a {
     font-weight: 700;
 }
 
+.reviews article {
+    padding: 40px 32px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 1px;
+    border-color: red;
+}
+
 /* .hero { ... }
 .advantages { ... }
 .pricing { ... }
@@ -453,6 +488,12 @@ nav a {
 #phone-for-order {
     grid-column: 1;
     grid-row: 1;
+}
+
+.reviews {
+    padding: 100px 360px;
+    text-align: center;
+    background-color: rgba(247, 248, 250, 1);
 }
 
 /* @media (min-width: 768px) { ... } */
