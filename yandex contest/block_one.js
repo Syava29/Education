@@ -1,18 +1,44 @@
-const inpt = '1 4 0 3';
+/*
+Вася и Маша участвуют в субботнике и красят стволы деревьев в белый цвет. Деревья растут вдоль улицы через равные промежутки в 1 метр. Одно из деревьев обозначено числом ноль, деревья по одну сторону занумерованы положительными числами 
+1
+,
+2
+1,2 и т.д., а в другую — отрицательными
+−
+1
+,
+−
+2
+−1,−2 и т.д.
 
-let res = 1;
-const treeArr = inpt.trim().split(/\s+/).map(Number);    
-    
-if (treeArr[1] < treeArr[2]) {
-    res += treeArr.reduce((acc, num) => (acc + num), 0);
-} else if (treeArr[1] > treeArr[2]) {
-    res += treeArr.reduce((acc, num) => (acc + num), 0) - (treeArr[1] - treeArr[2]);
-} else if (treeArr[2] >  treeArr[0] && treeArr[3] < treeArr[1]) {
-    res += treeArr.reduce((acc, num) => (acc + num), 0) - (treeArr[2] + treeArr[3])
+Ведро с краской для Васи установили возле дерева 
+P
+P, а для Маши — возле дерева 
+Q
+Q. Ведра с краской очень тяжелые и Вася с Машей не могут их переставить, поэтому они окунают кисть в ведро и уже с этой кистью идут красить дерево. Краска на кисти из ведра Васи засыхает, когда он удаляется от ведра более чем на 
+V
+V метров, а из ведра Маши — на 
+M
+M метров. Определите, сколько деревьев может быть покрашено.
+
+
+*/
+
+// const inpt = '0 10 3 4';
+const inpt = '0 5 2 3';
+// const inpt = '0 7 12 5';
+
+const treeArr = inpt.trim().split(/\s+/).map(Number);
+let p = treeArr[0], v = treeArr[1];
+let q = treeArr[2], m = treeArr[3];
+
+let minv = p - v, maxv = p + v;
+let minm = q - m, maxm = q + m;
+
+if (Math.max(minv, minm) <= Math.min(maxv, maxm) ) {
+    console.log(Math.max(maxv, maxm) - Math.min(minv, minm) + 1);
 } else {
-    res += treeArr.reduce((acc, num) => (acc + num), 0) - (treeArr[0] + treeArr[1])
+    console.log((maxv - minv + 1) + (maxm - minm + 1));
 }
 
-console.log(res);
-console.log(treeArr);
 
