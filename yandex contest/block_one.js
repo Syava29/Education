@@ -44,34 +44,48 @@ M метров. Определите, сколько деревьев может
 
 // (2)
 
-// const inputTwo = '89 20 41 1 11';
-const inputTwo = '11 1 1 1 1';
+const inputTwo = '89 20 41 1 11';
+// const inputTwo = '11 1 1 1 1';
+
+function getEntranceAndFloor(flatNo, flatsOnFloor, floors) {
+    let floorsBefore =  Math.floor((flatNo - 1) / flatsOnFloor);
+    let entrance = Math.floor(floorsBefore / floors + 1);
+    let floor = (floorsBefore % floors) + 1;
+    return [entrance, floor];
+}
+
+function check(k1, m, k2, p2, n2, flatsOnFloor) {
+    let [entrance2, floor2] = getEntranceAndFloor(k2, flatsOnFloor, m);
+
+    if (entrance2 == p2 && floor2 == n2) {
+        return getEntranceAndFloor(k1, flatsOnFloor, m);
+    }
+    return [-1, -1];
+}
 
 const inputStrArr = inputTwo.trim().split(/\s+/).map(Number);
 let k1 = inputStrArr[0], m = inputStrArr[1], k2 = inputStrArr[2], p2 = inputStrArr[3], n2 = inputStrArr[4];
-let countK = Math.round(k2 / n2);
-let countKP = countK * m;
-let p1 = 1, n1 = 1;
+let ent = -1;
+let floor = -1;
+let goodFlag = false;
 
-if (countK >= countKP) {
-    p1 = 0;    
-} else if (n2 >= m) {
-    n1 = 0;
-} else if (k1 > countKP) { 
-    p1 += 1;
-    n1 = Math.ceil((k1 - countKP) / countK);
-} else {
-    p1 = -1;
-    n1 = -1;
+for (let flatsOnFloor = 1; flatsOnFloor < 10**6 + 1; flatsOnFloor++) {
+    let [nEnt, nFloor] = check(k1, m, k2, p2, n2, flatsOnFloor);
+
+    if (nEnt !== -1) {
+        goodFlag = true;
+        if (ent === -1) {          // первый подходящий x
+            ent = nEnt;
+            floor = nFloor;
+        } else {
+            if (ent !== nEnt && ent !== 0) ent = 0;
+            if (floor !== nFloor && floor !== 0) floor = 0;
+        }
+    }   
 }
 
-    
-
-
-
-
-console.log(p1 + ' ' + n1);
-
-console.log(countK);
-console.log(countKP);
-console.log(k1);
+if (goodFlag == true) {
+    console.log(ent, floor);
+} else {
+    console.log(-1, -1);
+}
