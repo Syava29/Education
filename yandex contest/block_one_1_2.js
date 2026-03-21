@@ -9,6 +9,19 @@ let inputStr = '4 3 5 2 5';
 
 let arrNum = inputStr.split(' ');
 
-for (let num of arrNum) {
+let currentMaxNumFirst = 0;
+let currentMaxNumSecond = 0;
 
+for (let num of arrNum) {     
+    if ((Math.abs(num) >= Math.abs(currentMaxNumFirst)) && ((num * -1) != currentMaxNumFirst)) {
+        currentMaxNumSecond = currentMaxNumFirst;        
+        currentMaxNumFirst = num;
+    }    
 }
+
+if (currentMaxNumSecond - currentMaxNumFirst < 0) {
+    console.log(`${currentMaxNumSecond} ${currentMaxNumFirst}`);
+} else {
+    console.log(`${currentMaxNumFirst} ${currentMaxNumSecond}`);
+}
+
