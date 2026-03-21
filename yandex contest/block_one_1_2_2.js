@@ -1,32 +1,28 @@
-let inputStr = '25';
+let inputStr = '25 20 heat';
 const inputArr = inputStr.trim().split(/\s+/);
 
 console.log(inputArr);
 
-let tempArr = [inputArr[0], inputArr[1]];
+let tempArr = [parseInt(inputArr[0]), parseInt(inputArr[1])];
 let modeTemp = inputArr[2];
 
-switch(modeTemp) {
-    case 'heat':
-        if (tempArr[0] < tempArr[1]) {
-            console.log(tempArr[1]);
-        } else {
-            console.log(tempArr[0]);
-        }                    
-        break;
-    case 'freeze':
-        if (tempArr[0] > tempArr[1]) {
-            console.log(tempArr[1]);
-        } else {
-            console.log(tempArr[0]);
-        }
-        break;
-    case 'auto':
-        console.log(tempArr[1]);
-        break;
-    case 'fan':
-        console.log(tempArr[0]);
-        break;
-    default:              
-        break;  
+if (modeTemp == 'auto') {
+    console.log(tempArr[1]);
+}
+if (modeTemp == 'fan') {
+    console.log(tempArr[0]);
+}
+if (modeTemp == 'heat') {
+    if (inputArr[1] > inputArr[0]) {
+        console.log(inputArr[1])
+    } else {
+        console.log(inputArr[0])
+    }
+}
+if (modeTemp == 'freeze') {
+    if (inputArr[1] < inputArr[0]) {
+        console.log(inputArr[1])
+    } else {
+        console.log(inputArr[0])
+    }
 }
