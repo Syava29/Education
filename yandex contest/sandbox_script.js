@@ -101,4 +101,24 @@ function combiningArrays(arrOne, arrTwo) {
     return result;
 }
 
-console.log(combiningArrays(nums1, nums2));
+// console.log(combiningArrays(nums1, nums2));
+
+let arrWithZeros = [0, 3, 0, 1, 0, 7, 6, 8, 10];
+
+function moveZeros(nums) {
+    let slow = 0;
+    let fast = 0;
+
+    while (fast < nums.length) {
+        if (nums[fast] != 0) {
+            const temp = nums[slow];
+            nums[slow] = nums[fast];
+            nums[fast] = temp;
+            slow++;
+        }
+        fast++;
+    }
+    return nums
+}
+
+console.log(moveZeros(arrWithZeros));
