@@ -174,6 +174,19 @@ article p {
     color: rgba(0, 0, 0, 1);
 }
 
+.form-order-online h2 {
+    margin-top: 0;
+    font-family: sans-serif;
+    font-size: 3rem;    
+    color: #FFFFFF;
+}
+
+.form-order-online p {
+    font-family: sans-serif;
+    font-size: 1.125rem;    
+    color: #FFFFFF;
+}
+
 /* .header { ... }
 .container { ... }
 .section { ... } */
@@ -501,6 +514,12 @@ input[type="tel"] {
     padding: 100px 360px;
     text-align: center;
     background-color: rgba(247, 248, 250, 1);
+}
+
+.form-order-online {
+    padding: 100px 165px;
+    text-align: center;
+    background-color: #7DD83F;
 }
 
 /* @media (min-width: 768px) { ... } */
