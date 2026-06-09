@@ -373,6 +373,13 @@ nav a {
     font-weight: 700;
 }
 
+input[type="tel"] {
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    color: #00000033;
+    font-weight: 700;
+}
+
 .reviews article {
     padding: 40px 32px;
     border-radius: 16px;

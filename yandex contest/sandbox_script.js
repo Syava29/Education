@@ -121,4 +121,5 @@ function moveZeros(nums) {
     return nums
 }
 
-console.log(moveZeros(arrWithZeros));
+// console.log(moveZeros(arrWithZeros));
+
